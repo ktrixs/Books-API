@@ -22,7 +22,7 @@ composer refresh-db
 composer test
 ```
 
-
+ 
 ## Requirements
 
 The API has to provide endpoints for three operations:
@@ -76,7 +76,7 @@ Sample response (HTTP 200)
    }
 }
 ```
-
+ 
 TODO:
 1. Implement `App\Http\Resources\BookResource::toArray` method.
 2. Query the data from `Book` Eloquent model and respond with `BookResource` collection. 

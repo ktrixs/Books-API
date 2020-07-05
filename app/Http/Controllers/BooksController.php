@@ -17,6 +17,9 @@ class BooksController extends Controller
     public function getCollection(Request $request)
     {
         // @TODO implement
+        $books = BookResource::collection(Book::with('authors')->paginate(15));
+        return $books;
+       // return new BookResource($books);
         
     }
 

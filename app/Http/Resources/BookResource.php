@@ -9,6 +9,9 @@ namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 use App\Author;
+use App\BookReview;
+use App\Http\Resources\AuthorResource;
+use App\Http\Resources\BookReviewResource;
 
 class BookResource extends JsonResource
 {
@@ -22,8 +25,12 @@ class BookResource extends JsonResource
     {
         return [
             // @TODO implement
-           
-
+        'id' => $this->id,
+        'isbn' => $this->isbn,
+        'title' => $this->title,           
+        'description' => $this->description,           
+        'authors' => AuthorResource::collection(Author::all()),           
+        'review' => BookReviewResource::collection(BookReview::all()),
         ];
     }
 }
