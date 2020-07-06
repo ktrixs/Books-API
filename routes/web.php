@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('api/books', 'BooksController@getCollection')->name('books');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
