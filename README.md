@@ -19,9 +19,8 @@ composer refresh-db
 ### Tests
 
 ```
-composer test
+composer test or php vendor/phpunit/phpunit/phpunit
 ```
-
  
 ## Requirements
 
