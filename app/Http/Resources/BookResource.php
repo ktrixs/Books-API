@@ -29,8 +29,15 @@ class BookResource extends JsonResource
         'isbn' => $this->isbn,
         'title' => $this->title,           
         'description' => $this->description,           
-        'authors' => AuthorResource::collection(Author::all()),           
-        'review' => BookReviewResource::collection(BookReview::all()),
+        'authors' => [
+            'id' => $this->authors[0]->id,
+            'name' => $this->authors[0]->name,
+            'surname' => $this->authors[0]->surname,           
+        ],           
+        'review' => [
+                'avg' => (int) round($this->reviews->avg('review')),
+                'count' => (int) $this->reviews->count(),
+            ],
         ];
     }
 }

@@ -1,58 +1,984 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Feature" tests="44" assertions="209" errors="0" failures="0" skipped="0" time="6.300314">
-    <testsuite name="Tests\Feature\BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" tests="7" assertions="100" errors="0" failures="0" skipped="0" time="5.369319">
-      <testcase name="testResponseStructure" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="14" assertions="76" time="5.098299"/>
-      <testcase name="testListWithoutFilters" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="68" assertions="2" time="0.050998"/>
-      <testcase name="testTitleFilter" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="88" assertions="4" time="0.024922"/>
-      <testcase name="testAuthorsFilter" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="105" assertions="6" time="0.037733"/>
-      <testcase name="testTitleSort" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="136" assertions="4" time="0.027007"/>
-      <testcase name="testAvgReviewSort" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="153" assertions="4" time="0.060039"/>
-      <testcase name="testPagination" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookListTest.php" line="184" assertions="4" time="0.070321"/>
+  <testsuite name="Feature" tests="44" assertions="47" errors="0" failures="44" skipped="0" time="19.341476">
+    <testsuite name="Tests\Feature\BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" tests="7" assertions="10" errors="0" failures="7" skipped="0" time="16.303464">
+      <testcase name="testResponseStructure" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="14" assertions="2" time="15.568517">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testResponseStructure
+Failed asserting that an array has the key 'data'.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:614
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:33
+</failure>
+      </testcase>
+      <testcase name="testListWithoutFilters" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="68" assertions="2" time="0.226405">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testListWithoutFilters
+Unable to find JSON: &#13;
+&#13;
+[{
+    "data": [
+        {
+            "id": 6,
+            "isbn": "9799656684498",
+            "title": "Sed voluptate aut quam quia ea delectus atque.",
+            "description": "Eos repellendus nihil voluptatem non consectetur alias. Et quos porro laudantium dolor necessitatibus voluptatem modi.",
+            "authors": [
+                {
+                    "id": 6,
+                    "name": "Alexandria McGlynn",
+                    "surname": "Jones"
+                }
+            ],
+            "review": {
+                "avg": 7,
+                "count": 3
+            }
+        },
+        {
+            "id": 7,
+            "isbn": "9780143178743",
+            "title": "Non dolor natus nam molestiae nam ut.",
+            "description": "Totam eaque qui eum. Repellendus nobis nesciunt consequatur quos incidunt dolorum ut consequatur. Voluptatum quis quis ut hic. In laborum vero consectetur explicabo quae expedita.",
+            "authors": [
+                {
+                    "id": 7,
+                    "name": "Wilmer Legros",
+                    "surname": "Jaskolski"
+                }
+            ],
+            "review": {
+                "avg": 6,
+                "count": 3
+            }
+        },
+        {
+            "id": 8,
+            "isbn": "9797694849497",
+            "title": "Ratione omnis at repellat culpa ducimus architecto accusamus.",
+            "description": "Occaecati vel qui iure sequi dignissimos. Rerum quod amet quisquam ducimus sunt repellat minima. Consequatur saepe omnis nobis autem ut.",
+            "authors": [
+                {
+                    "id": 8,
+                    "name": "Jasen Renner",
+                    "surname": "Nienow"
+                }
+            ],
+            "review": {
+                "avg": 3,
+                "count": 3
+            }
+        },
+        {
+            "id": 9,
+            "isbn": "9796899098631",
+            "title": "Iste itaque dignissimos ducimus error.",
+            "description": "Id officia non reiciendis ipsum exercitationem non iste voluptates. Autem ab corrupti consequuntur. Sit reiciendis at enim sed rem aperiam dolores molestiae.",
+            "authors": [
+                {
+                    "id": 9,
+                    "name": "Dr. Alvah Cronin",
+                    "surname": "Lakin"
+                }
+            ],
+            "review": {
+                "avg": 5,
+                "count": 3
+            }
+        },
+        {
+            "id": 10,
+            "isbn": "9784883614349",
+            "title": "Aliquam fugit nesciunt sit dolore.",
+            "description": "Veritatis quam quasi dicta qui et odio. Illo aliquam voluptatem eum praesentium modi ut occaecati. Voluptatem hic voluptates et odit. Hic architecto repudiandae pariatur enim fugit odio culpa.",
+            "authors": [
+                {
+                    "id": 10,
+                    "name": "Karelle Larson",
+                    "surname": "Parisian"
+                }
+            ],
+            "review": {
+                "avg": 8,
+                "count": 3
+            }
+        }
+    ]
+}]&#13;
+&#13;
+within response JSON:&#13;
+&#13;
+[[
+    {
+        "id": 6,
+        "isbn": "9799656684498",
+        "title": "Sed voluptate aut quam quia ea delectus atque.",
+        "description": "Eos repellendus nihil voluptatem non consectetur alias. Et quos porro laudantium dolor necessitatibus voluptatem modi.",
+        "authors": {
+            "id": 6,
+            "name": "Alexandria McGlynn",
+            "surname": "Jones"
+        },
+        "review": {
+            "avg": 7,
+            "count": 3
+        }
+    },
+    {
+        "id": 7,
+        "isbn": "9780143178743",
+        "title": "Non dolor natus nam molestiae nam ut.",
+        "description": "Totam eaque qui eum. Repellendus nobis nesciunt consequatur quos incidunt dolorum ut consequatur. Voluptatum quis quis ut hic. In laborum vero consectetur explicabo quae expedita.",
+        "authors": {
+            "id": 7,
+            "name": "Wilmer Legros",
+            "surname": "Jaskolski"
+        },
+        "review": {
+            "avg": 6,
+            "count": 3
+        }
+    },
+    {
+        "id": 8,
+        "isbn": "9797694849497",
+        "title": "Ratione omnis at repellat culpa ducimus architecto accusamus.",
+        "description": "Occaecati vel qui iure sequi dignissimos. Rerum quod amet quisquam ducimus sunt repellat minima. Consequatur saepe omnis nobis autem ut.",
+        "authors": {
+            "id": 8,
+            "name": "Jasen Renner",
+            "surname": "Nienow"
+        },
+        "review": {
+            "avg": 3,
+            "count": 3
+        }
+    },
+    {
+        "id": 9,
+        "isbn": "9796899098631",
+        "title": "Iste itaque dignissimos ducimus error.",
+        "description": "Id officia non reiciendis ipsum exercitationem non iste voluptates. Autem ab corrupti consequuntur. Sit reiciendis at enim sed rem aperiam dolores molestiae.",
+        "authors": {
+            "id": 9,
+            "name": "Dr. Alvah Cronin",
+            "surname": "Lakin"
+        },
+        "review": {
+            "avg": 5,
+            "count": 3
+        }
+    },
+    {
+        "id": 10,
+        "isbn": "9784883614349",
+        "title": "Aliquam fugit nesciunt sit dolore.",
+        "description": "Veritatis quam quasi dicta qui et odio. Illo aliquam voluptatem eum praesentium modi ut occaecati. Voluptatem hic voluptates et odit. Hic architecto repudiandae pariatur enim fugit odio culpa.",
+        "authors": {
+            "id": 10,
+            "name": "Karelle Larson",
+            "surname": "Parisian"
+        },
+        "review": {
+            "avg": 8,
+            "count": 3
+        }
+    }
+]].&#13;
+&#13;
+
+Failed asserting that an array has the subset Array &amp;0 (
+    'data' =&gt; Array &amp;1 (
+        0 =&gt; Array &amp;2 (
+            'id' =&gt; 6
+            'isbn' =&gt; '9799656684498'
+            'title' =&gt; 'Sed voluptate aut quam quia ea delectus atque.'
+            'description' =&gt; 'Eos repellendus nihil voluptatem non consectetur alias. Et quos porro laudantium dolor necessitatibus voluptatem modi.'
+            'authors' =&gt; Array &amp;3 (
+                0 =&gt; Array &amp;4 (
+                    'id' =&gt; 6
+                    'name' =&gt; 'Alexandria McGlynn'
+                    'surname' =&gt; 'Jones'
+                )
+            )
+            'review' =&gt; Array &amp;5 (
+                'avg' =&gt; 7
+                'count' =&gt; 3
+            )
+        )
+        1 =&gt; Array &amp;6 (
+            'id' =&gt; 7
+            'isbn' =&gt; '9780143178743'
+            'title' =&gt; 'Non dolor natus nam molestiae nam ut.'
+            'description' =&gt; 'Totam eaque qui eum. Repellendus nobis nesciunt consequatur quos incidunt dolorum ut consequatur. Voluptatum quis quis ut hic. In laborum vero consectetur explicabo quae expedita.'
+            'authors' =&gt; Array &amp;7 (
+                0 =&gt; Array &amp;8 (
+                    'id' =&gt; 7
+                    'name' =&gt; 'Wilmer Legros'
+                    'surname' =&gt; 'Jaskolski'
+                )
+            )
+            'review' =&gt; Array &amp;9 (
+                'avg' =&gt; 6
+                'count' =&gt; 3
+            )
+        )
+        2 =&gt; Array &amp;10 (
+            'id' =&gt; 8
+            'isbn' =&gt; '9797694849497'
+            'title' =&gt; 'Ratione omnis at repellat culpa ducimus architecto accusamus.'
+            'description' =&gt; 'Occaecati vel qui iure sequi dignissimos. Rerum quod amet quisquam ducimus sunt repellat minima. Consequatur saepe omnis nobis autem ut.'
+            'authors' =&gt; Array &amp;11 (
+                0 =&gt; Array &amp;12 (
+                    'id' =&gt; 8
+                    'name' =&gt; 'Jasen Renner'
+                    'surname' =&gt; 'Nienow'
+                )
+            )
+            'review' =&gt; Array &amp;13 (
+                'avg' =&gt; 3
+                'count' =&gt; 3
+            )
+        )
+        3 =&gt; Array &amp;14 (
+            'id' =&gt; 9
+            'isbn' =&gt; '9796899098631'
+            'title' =&gt; 'Iste itaque dignissimos ducimus error.'
+            'description' =&gt; 'Id officia non reiciendis ipsum exercitationem non iste voluptates. Autem ab corrupti consequuntur. Sit reiciendis at enim sed rem aperiam dolores molestiae.'
+            'authors' =&gt; Array &amp;15 (
+                0 =&gt; Array &amp;16 (
+                    'id' =&gt; 9
+                    'name' =&gt; 'Dr. Alvah Cronin'
+                    'surname' =&gt; 'Lakin'
+                )
+            )
+            'review' =&gt; Array &amp;17 (
+                'avg' =&gt; 5
+                'count' =&gt; 3
+            )
+        )
+        4 =&gt; Array &amp;18 (
+            'id' =&gt; 10
+            'isbn' =&gt; '9784883614349'
+            'title' =&gt; 'Aliquam fugit nesciunt sit dolore.'
+            'description' =&gt; 'Veritatis quam quasi dicta qui et odio. Illo aliquam voluptatem eum praesentium modi ut occaecati. Voluptatem hic voluptates et odit. Hic architecto repudiandae pariatur enim fugit odio culpa.'
+            'authors' =&gt; Array &amp;19 (
+                0 =&gt; Array &amp;20 (
+                    'id' =&gt; 10
+                    'name' =&gt; 'Karelle Larson'
+                    'surname' =&gt; 'Parisian'
+                )
+            )
+            'review' =&gt; Array &amp;21 (
+                'avg' =&gt; 8
+                'count' =&gt; 3
+            )
+        )
+    )
+).
+--- Expected
++++ Actual
+@@ @@
+       'count' =&gt; 3,
+     ),
+   ),
+-  'data' =&gt; 
+-  array (
+-    0 =&gt; 
+-    array (
+-      'id' =&gt; 6,
+-      'isbn' =&gt; '9799656684498',
+-      'title' =&gt; 'Sed voluptate aut quam quia ea delectus atque.',
+-      'description' =&gt; 'Eos repellendus nihil voluptatem non consectetur alias. Et quos porro laudantium dolor necessitatibus voluptatem modi.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 6,
+-          'name' =&gt; 'Alexandria McGlynn',
+-          'surname' =&gt; 'Jones',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 7,
+-        'count' =&gt; 3,
+-      ),
+-    ),
+-    1 =&gt; 
+-    array (
+-      'id' =&gt; 7,
+-      'isbn' =&gt; '9780143178743',
+-      'title' =&gt; 'Non dolor natus nam molestiae nam ut.',
+-      'description' =&gt; 'Totam eaque qui eum. Repellendus nobis nesciunt consequatur quos incidunt dolorum ut consequatur. Voluptatum quis quis ut hic. In laborum vero consectetur explicabo quae expedita.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 7,
+-          'name' =&gt; 'Wilmer Legros',
+-          'surname' =&gt; 'Jaskolski',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 6,
+-        'count' =&gt; 3,
+-      ),
+-    ),
+-    2 =&gt; 
+-    array (
+-      'id' =&gt; 8,
+-      'isbn' =&gt; '9797694849497',
+-      'title' =&gt; 'Ratione omnis at repellat culpa ducimus architecto accusamus.',
+-      'description' =&gt; 'Occaecati vel qui iure sequi dignissimos. Rerum quod amet quisquam ducimus sunt repellat minima. Consequatur saepe omnis nobis autem ut.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 8,
+-          'name' =&gt; 'Jasen Renner',
+-          'surname' =&gt; 'Nienow',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 3,
+-        'count' =&gt; 3,
+-      ),
+-    ),
+-    3 =&gt; 
+-    array (
+-      'id' =&gt; 9,
+-      'isbn' =&gt; '9796899098631',
+-      'title' =&gt; 'Iste itaque dignissimos ducimus error.',
+-      'description' =&gt; 'Id officia non reiciendis ipsum exercitationem non iste voluptates. Autem ab corrupti consequuntur. Sit reiciendis at enim sed rem aperiam dolores molestiae.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 9,
+-          'name' =&gt; 'Dr. Alvah Cronin',
+-          'surname' =&gt; 'Lakin',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 5,
+-        'count' =&gt; 3,
+-      ),
+-    ),
+-    4 =&gt; 
+-    array (
+-      'id' =&gt; 10,
+-      'isbn' =&gt; '9784883614349',
+-      'title' =&gt; 'Aliquam fugit nesciunt sit dolore.',
+-      'description' =&gt; 'Veritatis quam quasi dicta qui et odio. Illo aliquam voluptatem eum praesentium modi ut occaecati. Voluptatem hic voluptates et odit. Hic architecto repudiandae pariatur enim fugit odio culpa.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 10,
+-          'name' =&gt; 'Karelle Larson',
+-          'surname' =&gt; 'Parisian',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 8,
+-        'count' =&gt; 3,
+-      ),
+-    ),
+-  ),
+ )
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Assert.php:40
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:443
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:204
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:85
+</failure>
+      </testcase>
+      <testcase name="testTitleFilter" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="88" assertions="1" time="0.140535">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testTitleFilter
+Expected status code 200 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:96
+</failure>
+      </testcase>
+      <testcase name="testAuthorsFilter" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="105" assertions="2" time="0.120193">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testAuthorsFilter
+Unable to find JSON: &#13;
+&#13;
+[{
+    "data": [
+        {
+            "id": 14,
+            "isbn": "9786062458577",
+            "title": "PHP for begginers",
+            "description": "Voluptas itaque nobis reprehenderit numquam. Non quaerat corporis aut nisi laudantium.",
+            "authors": [
+                {
+                    "id": 11,
+                    "name": "Dagmar Welch",
+                    "surname": "Zemlak"
+                },
+                {
+                    "id": 12,
+                    "name": "Sunny Altenwerth MD",
+                    "surname": "Klocko"
+                }
+            ],
+            "review": {
+                "avg": 0,
+                "count": 0
+            }
+        },
+        {
+            "id": 15,
+            "isbn": "9783085012892",
+            "title": "Javascript for dummies",
+            "description": "Dignissimos provident commodi ducimus. Corporis sint omnis velit suscipit sunt. Laboriosam voluptas est ut minima vero eius. Veritatis modi occaecati dolores animi.",
+            "authors": [
+                {
+                    "id": 11,
+                    "name": "Dagmar Welch",
+                    "surname": "Zemlak"
+                }
+            ],
+            "review": {
+                "avg": 0,
+                "count": 0
+            }
+        }
+    ]
+}]&#13;
+&#13;
+within response JSON:&#13;
+&#13;
+[[
+    {
+        "id": 14,
+        "isbn": "9786062458577",
+        "title": "PHP for begginers",
+        "description": "Voluptas itaque nobis reprehenderit numquam. Non quaerat corporis aut nisi laudantium.",
+        "authors": {
+            "id": 11,
+            "name": "Dagmar Welch",
+            "surname": "Zemlak"
+        },
+        "review": {
+            "avg": 0,
+            "count": 0
+        }
+    },
+    {
+        "id": 15,
+        "isbn": "9783085012892",
+        "title": "Javascript for dummies",
+        "description": "Dignissimos provident commodi ducimus. Corporis sint omnis velit suscipit sunt. Laboriosam voluptas est ut minima vero eius. Veritatis modi occaecati dolores animi.",
+        "authors": {
+            "id": 11,
+            "name": "Dagmar Welch",
+            "surname": "Zemlak"
+        },
+        "review": {
+            "avg": 0,
+            "count": 0
+        }
+    },
+    {
+        "id": 16,
+        "isbn": "9793880236720",
+        "title": "Advanced Python",
+        "description": "Laudantium velit iure dicta provident recusandae aut quia. Est quae veniam dolorem eos. Dolor sint harum consequatur.",
+        "authors": {
+            "id": 12,
+            "name": "Sunny Altenwerth MD",
+            "surname": "Klocko"
+        },
+        "review": {
+            "avg": 0,
+            "count": 0
+        }
+    }
+]].&#13;
+&#13;
+
+Failed asserting that an array has the subset Array &amp;0 (
+    'data' =&gt; Array &amp;1 (
+        0 =&gt; Array &amp;2 (
+            'id' =&gt; 14
+            'isbn' =&gt; '9786062458577'
+            'title' =&gt; 'PHP for begginers'
+            'description' =&gt; 'Voluptas itaque nobis reprehenderit numquam. Non quaerat corporis aut nisi laudantium.'
+            'authors' =&gt; Array &amp;3 (
+                0 =&gt; Array &amp;4 (
+                    'id' =&gt; 11
+                    'name' =&gt; 'Dagmar Welch'
+                    'surname' =&gt; 'Zemlak'
+                )
+                1 =&gt; Array &amp;5 (
+                    'id' =&gt; 12
+                    'name' =&gt; 'Sunny Altenwerth MD'
+                    'surname' =&gt; 'Klocko'
+                )
+            )
+            'review' =&gt; Array &amp;6 (
+                'avg' =&gt; 0
+                'count' =&gt; 0
+            )
+        )
+        1 =&gt; Array &amp;7 (
+            'id' =&gt; 15
+            'isbn' =&gt; '9783085012892'
+            'title' =&gt; 'Javascript for dummies'
+            'description' =&gt; 'Dignissimos provident commodi ducimus. Corporis sint omnis velit suscipit sunt. Laboriosam voluptas est ut minima vero eius. Veritatis modi occaecati dolores animi.'
+            'authors' =&gt; Array &amp;8 (
+                0 =&gt; Array &amp;9 (
+                    'id' =&gt; 11
+                    'name' =&gt; 'Dagmar Welch'
+                    'surname' =&gt; 'Zemlak'
+                )
+            )
+            'review' =&gt; Array &amp;10 (
+                'avg' =&gt; 0
+                'count' =&gt; 0
+            )
+        )
+    )
+).
+--- Expected
++++ Actual
+@@ @@
+       'count' =&gt; 0,
+     ),
+   ),
+-  'data' =&gt; 
+-  array (
+-    0 =&gt; 
+-    array (
+-      'id' =&gt; 14,
+-      'isbn' =&gt; '9786062458577',
+-      'title' =&gt; 'PHP for begginers',
+-      'description' =&gt; 'Voluptas itaque nobis reprehenderit numquam. Non quaerat corporis aut nisi laudantium.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 11,
+-          'name' =&gt; 'Dagmar Welch',
+-          'surname' =&gt; 'Zemlak',
+-        ),
+-        1 =&gt; 
+-        array (
+-          'id' =&gt; 12,
+-          'name' =&gt; 'Sunny Altenwerth MD',
+-          'surname' =&gt; 'Klocko',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 0,
+-        'count' =&gt; 0,
+-      ),
+-    ),
+-    1 =&gt; 
+-    array (
+-      'id' =&gt; 15,
+-      'isbn' =&gt; '9783085012892',
+-      'title' =&gt; 'Javascript for dummies',
+-      'description' =&gt; 'Dignissimos provident commodi ducimus. Corporis sint omnis velit suscipit sunt. Laboriosam voluptas est ut minima vero eius. Veritatis modi occaecati dolores animi.',
+-      'authors' =&gt; 
+-      array (
+-        0 =&gt; 
+-        array (
+-          'id' =&gt; 11,
+-          'name' =&gt; 'Dagmar Welch',
+-          'surname' =&gt; 'Zemlak',
+-        ),
+-      ),
+-      'review' =&gt; 
+-      array (
+-        'avg' =&gt; 0,
+-        'count' =&gt; 0,
+-      ),
+-    ),
+-  ),
+ )
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Assert.php:40
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:443
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:204
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:123
+</failure>
+      </testcase>
+      <testcase name="testTitleSort" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="136" assertions="1" time="0.094503">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testTitleSort
+Expected status code 200 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:143
+</failure>
+      </testcase>
+      <testcase name="testAvgReviewSort" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="153" assertions="1" time="0.075219">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testAvgReviewSort
+Expected status code 200 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:174
+</failure>
+      </testcase>
+      <testcase name="testPagination" class="Tests\Feature\BooksListTest" classname="Tests.Feature.BooksListTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php" line="184" assertions="1" time="0.078092">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BooksListTest::testPagination
+Expected status code 200 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookListTest.php:191
+</failure>
+      </testcase>
     </testsuite>
-    <testsuite name="Tests\Feature\BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" tests="25" assertions="74" errors="0" failures="0" skipped="0" time="0.624042">
-      <testcase name="testDenyGuestAccess" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="13" assertions="1" time="0.074477"/>
-      <testcase name="testDenyNonAdminUserAccess" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="27" assertions="1" time="0.014368"/>
-      <testcase name="testSuccessfulPost" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="44" assertions="6" time="0.087877"/>
-      <testsuite name="Tests\Feature\BookPostTest::testValidation" tests="22" assertions="66" errors="0" failures="0" skipped="0" time="0.447320">
-        <testcase name="testValidation with data set #0" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.041052"/>
-        <testcase name="testValidation with data set #1" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.019595"/>
-        <testcase name="testValidation with data set #2" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.018226"/>
-        <testcase name="testValidation with data set #3" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.021159"/>
-        <testcase name="testValidation with data set #4" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.019790"/>
-        <testcase name="testValidation with data set #5" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.022064"/>
-        <testcase name="testValidation with data set #6" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.018259"/>
-        <testcase name="testValidation with data set #7" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.019276"/>
-        <testcase name="testValidation with data set #8" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.018320"/>
-        <testcase name="testValidation with data set #9" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.019364"/>
-        <testcase name="testValidation with data set #10" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.021535"/>
-        <testcase name="testValidation with data set #11" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.021978"/>
-        <testcase name="testValidation with data set #12" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.020981"/>
-        <testcase name="testValidation with data set #13" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.017951"/>
-        <testcase name="testValidation with data set #14" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.018929"/>
-        <testcase name="testValidation with data set #15" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.019432"/>
-        <testcase name="testValidation with data set #16" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.018069"/>
-        <testcase name="testValidation with data set #17" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.018115"/>
-        <testcase name="testValidation with data set #18" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.017830"/>
-        <testcase name="testValidation with data set #19" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.017967"/>
-        <testcase name="testValidation with data set #20" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.020905"/>
-        <testcase name="testValidation with data set #21" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookPostTest.php" line="72" assertions="3" time="0.016523"/>
+    <testsuite name="Tests\Feature\BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" tests="25" assertions="25" errors="0" failures="25" skipped="0" time="2.263454">
+      <testcase name="testDenyGuestAccess" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="13" assertions="1" time="0.252595">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testDenyGuestAccess
+Expected status code 401 but received 302.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:24
+</failure>
+      </testcase>
+      <testcase name="testDenyNonAdminUserAccess" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="27" assertions="1" time="0.064768">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testDenyNonAdminUserAccess
+Expected status code 403 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:41
+</failure>
+      </testcase>
+      <testcase name="testSuccessfulPost" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="44" assertions="1" time="0.078937">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testSuccessfulPost
+Expected status code 201 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:59
+</failure>
+      </testcase>
+      <testsuite name="Tests\Feature\BookPostTest::testValidation" tests="22" assertions="22" errors="0" failures="22" skipped="0" time="1.867154">
+        <testcase name="testValidation with data set #0" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.113483">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #0 (array(null), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #1" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.116048">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #1 (array(''), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #2" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.113024">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #2 (array('9788328302341'), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #3" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.104546">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #3 (array('978832830234'), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #4" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.080529">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #4 (array('97883283023422'), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #5" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.064734">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #5 (array(array()), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #6" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.056090">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #6 (array(array(673890)), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #7" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.118968">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #7 (array(array('978832830234')), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #8" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.119785">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #8 (array('FCKGWRHQQ2'), 'isbn')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #9" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.077725">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #9 (array(null), 'title')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #10" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.077011">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #10 (array(''), 'title')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #11" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.119814">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #11 (array(array()), 'title')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #12" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.100456">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #12 (array(null), 'description')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #13" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.099142">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #13 (array(''), 'description')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #14" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.067756">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #14 (array(array()), 'description')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #15" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.092495">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #15 (array(null), 'authors')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #16" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.059727">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #16 (array(array()), 'authors')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #17" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.049433">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #17 (array(''), 'authors')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #18" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.068916">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #18 (array(1), 'authors')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #19" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.060969">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #19 (array(array(999999)), 'authors.0')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #20" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.066139">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #20 (array(array(array())), 'authors.0')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #21" class="Tests\Feature\BookPostTest" classname="Tests.Feature.BookPostTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php" line="72" assertions="1" time="0.040364">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookPostTest::testValidation with data set #21 (array(array(null)), 'authors.0')
+Expected status code 422 but received 500.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookPostTest.php:91
+</failure>
+        </testcase>
       </testsuite>
     </testsuite>
-    <testsuite name="Tests\Feature\BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" tests="12" assertions="35" errors="0" failures="0" skipped="0" time="0.306953">
-      <testcase name="testDenyGuestAccess" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="14" assertions="1" time="0.015025"/>
-      <testcase name="testError404OnInvalidBookId" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="26" assertions="1" time="0.096548"/>
-      <testcase name="testSuccessfulPost" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="40" assertions="6" time="0.028849"/>
-      <testsuite name="Tests\Feature\BookReviewTest::testValidation" tests="9" assertions="27" errors="0" failures="0" skipped="0" time="0.166531">
-        <testcase name="testValidation with data set #0" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.018110"/>
-        <testcase name="testValidation with data set #1" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.015344"/>
-        <testcase name="testValidation with data set #2" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.020030"/>
-        <testcase name="testValidation with data set #3" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.019973"/>
-        <testcase name="testValidation with data set #4" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.016750"/>
-        <testcase name="testValidation with data set #5" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.018500"/>
-        <testcase name="testValidation with data set #6" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.019263"/>
-        <testcase name="testValidation with data set #7" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.019460"/>
-        <testcase name="testValidation with data set #8" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="/home/wizimara/wizimara/laravel-apps/devskiller-code-D944-QWHQ-GA-S2T0/tests/Feature/BookReviewTest.php" line="77" assertions="3" time="0.019101"/>
+    <testsuite name="Tests\Feature\BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" tests="12" assertions="12" errors="0" failures="12" skipped="0" time="0.774558">
+      <testcase name="testDenyGuestAccess" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="14" assertions="1" time="0.050294">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testDenyGuestAccess
+Expected status code 401 but received 302.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:23
+</failure>
+      </testcase>
+      <testcase name="testError404OnInvalidBookId" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="26" assertions="1" time="0.073880">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testError404OnInvalidBookId
+Expected status code 404 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:37
+</failure>
+      </testcase>
+      <testcase name="testSuccessfulPost" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="40" assertions="1" time="0.105341">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testSuccessfulPost
+Expected status code 201 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:53
+</failure>
+      </testcase>
+      <testsuite name="Tests\Feature\BookReviewTest::testValidation" tests="9" assertions="9" errors="0" failures="9" skipped="0" time="0.545043">
+        <testcase name="testValidation with data set #0" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.110194">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #0 (array(null), 'review')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #1" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.093892">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #1 (array(''), 'review')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #2" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.031993">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #2 (array(0), 'review')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #3" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.040297">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #3 (array(11), 'review')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #4" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.041167">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #4 (array(3.5), 'review')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #5" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.057113">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #5 (array(array()), 'review')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #6" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.048897">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #6 (array(null), 'comment')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #7" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.041173">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #7 (array(''), 'comment')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
+        <testcase name="testValidation with data set #8" class="Tests\Feature\BookReviewTest" classname="Tests.Feature.BookReviewTest" file="C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php" line="77" assertions="1" time="0.080317">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\BookReviewTest::testValidation with data set #8 (array(array()), 'comment')
+Expected status code 422 but received 200.
+Failed asserting that false is true.
+
+C:\xampp\htdocs\books_api\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestResponse.php:151
+C:\xampp\htdocs\books_api\tests\Feature\BookReviewTest.php:92
+</failure>
+        </testcase>
       </testsuite>
     </testsuite>
   </testsuite>
