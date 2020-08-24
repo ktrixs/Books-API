@@ -13,6 +13,7 @@ use App\Http\Requests\PostBookReviewRequest;
 use App\Http\Resources\BookResource;
 use App\Http\Resources\BookReviewResource;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Spatie\QueryBuilder\QueryBuilder;
 use Auth;
 
@@ -20,21 +21,19 @@ class BooksController extends Controller
 {
     public function getCollection(Request $request)
     {
-        // @TODO implement
-        // if (Request('title')) {
-        //     # code..
-        //     $users = QueryBuilder::for(Book::class)
-        //         ->allowedFilters('title')
-        //         ->get();
 
-        //     return $users;
-        // }
-
-        $books = BookResource::collection(Book::with('authors')->paginate(15));
+        // $books = BookResource::collection(Book::with('authors')->paginate(15));
+            $books = BookResource::collection(
+        // GET /books?sort=-title
+        QueryBuilder::for(Book::with('authors'))
+        ->allowedSorts([
+          'title','id',
+        ])
+        ->allowedFilters('name')
+        ->get()
+      );
 
             return $books;
-            # code...
-        // return response()->json(['error' => 'You cant only view (You have no access).'], 403);       
     }
 
     public function post(PostBookRequest $request)
